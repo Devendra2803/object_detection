@@ -20,18 +20,13 @@ pip install -r requirements.txt
 Make sure your output_videos/ folder exists — it will be auto-created if not.
 
 Each model runs on a separate port:
-
-bash
-Copy
-Edit
 # SSD
-uvicorn ssdmodel:app --reload --port 8001
+python ssdmodel.py
 
 # FRCNN
-uvicorn frcnnmodel:app --reload --port 8002
-
+python frcnnmodel.py
 # YOLOv8
-uvicorn yolov:app --reload --port 8003
+python yolov.py
 🧪 API Endpoints
 Each model exposes the same 3 routes:
 
@@ -43,16 +38,9 @@ GET	/download-output-<model>/{record_id}	Download video output by ID
 Replace <model> with: ssd, frcnn, or yolo
 
 Example:
-
-bash
-Copy
-Edit
 http://127.0.0.1:8003/docs     # YOLOv8 Swagger
 
 📁 Project Structure
-bash
-Copy
-Edit
 object_detector/
 │
 ├── db.py                     # DB connection

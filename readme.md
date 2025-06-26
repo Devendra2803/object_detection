@@ -48,26 +48,6 @@ bash
 Copy
 Edit
 http://127.0.0.1:8003/docs     # YOLOv8 Swagger
-🗃️ Database Schema
-All detection results are stored in a PostgreSQL table:
-
-Table: detection_model_training
-
-Field	Type	Description
-id	Integer	Primary key
-project_name	String	Example: "Object Detection"
-task_name	String	Example: "Video Detection"
-model_name	String	Model used
-model_path	String	Relative path to model
-raw_data_zip	String	Uploaded video name
-num_classes	Integer	Number of detected classes
-class_names	Text	All class names (comma-separated)
-data_size	Integer	Number of frames processed
-splitted_data	String	Reserved
-best_model_save	String	Note (e.g., "Stored in DB")
-video_output	LargeBinary	Byte-encoded processed video
-status	String	Default: "Completed"
-created_at	DateTime	Auto timestamp
 
 📁 Project Structure
 bash

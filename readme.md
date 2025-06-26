@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # Object Detector FastAPI 🎯🎥
 =======
-<<<<<<< HEAD
 🧠 YOLOv8 Video Object Detection API
 This project is a FastAPI-based backend for detecting objects in uploaded videos using the YOLOv8 model. It processes a video, adds bounding boxes around detected objects, and returns the path to the saved output video.
->>>>>>> b0952cd (updated)
 
 This project provides FastAPI-based APIs for running object detection on uploaded videos using:
 - 📦 MobileNet SSD (OpenCV DNN)
@@ -31,6 +28,7 @@ python ssdmodel.py
 
 # FRCNN
 python frcnnmodel.py
+
 # YOLOv8
 python yolov.py
 🧪 API Endpoints

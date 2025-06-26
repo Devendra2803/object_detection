@@ -121,7 +121,6 @@ async def detect_video_ssd(file: UploadFile = File(...)):
                     class_names=", ".join(CLASS_NAMES),
                     data_size=metrics["total_frames"],
                     splitted_data="N/A",
-                    best_model_save="Stored in DB",
                     video_output=video_binary,
                     status="Completed"
                 )

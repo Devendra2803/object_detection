@@ -3,4 +3,14 @@ uvicorn
 opencv-python
 ultralytics
 python-multipart
+<<<<<<< HEAD
 torchvision
+=======
+<<<<<<< HEAD
+torch
+torchvision
+pydantic
+=======
+torchvision
+>>>>>>> a299a86 (Updated YOLO, FRCNN, SSD models to store video in DB with relative model paths)
+>>>>>>> b0952cd (updated)
